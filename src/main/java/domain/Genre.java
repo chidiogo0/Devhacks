@@ -1,6 +1,6 @@
 package domain;
 
-public enum GenreType {
+public enum Genre {
     ROMANCE,
     THRILLER,
     MYSTERY,
