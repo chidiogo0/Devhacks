@@ -1,4 +1,39 @@
+body{
+    background-color: #4682B4;
+}
 header{
+    color: white;
     text-align: center;
     font-size: 80px;
+}
+
+h2{
+    color: black;
+    text-align: center;
+}
+#add_book{
+    color: white;
+    text-align: center;
+}
+
+button{
+    color: #4682B4;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#add_book_form{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#views{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
 }
