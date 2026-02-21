@@ -1,1 +1,84 @@
 <!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Tracker</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header> Book Manager</header>
+
+    <section id ="add_book">
+        <h2>Add a book</h2>
+
+        <form id="add_book_form">
+            <input type="text" id="title" placeholder="Title" required>
+            <br>
+            <input type="text" id="author" placeholder="Author" required>
+            <br>
+            <input type="text" id="isbn" placeholder="ISBN" required>
+            <br>
+            <input type="number" id="pagecount" placeholder="Page Count">
+            <br>
+            <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5">
+            <br>
+            <select id="genre">
+                <option value="">Select Genre</option>
+                <option value="ROMANCE">Romance</option>
+                <option value="THRILLER">Thriller</option>
+                <option value="MYSTERY">Mystery</option>
+                <option value="CRIME">Crime</option>
+                <option value="HORROR">Horror</option>
+                <option value="SELF_HELP">Self Help</option>
+                <option value="FANTACY">Fantacy</option>
+                <option value="SCI_FI">Sci-fi</option>
+            </select>
+            <br>
+            <select id="status">
+                <option value="">Book Status</option>
+                <option value="TO_READ">Not started</option>
+                <option value="READING">Currently Reading</option>
+                <option value="FINISHED">Finished reading</option>
+            </select>
+            <br>
+            <button type="submit">Add Book</button>
+        </form>
+    </section>
+
+    <h2>View books</h2>
+
+    <section>
+        <button id="all-books">View all books</button>
+
+    </section>
+
+    <section>
+        <select id="bygenre">
+            <option value="">By genre</option>
+            <option value="ROMANCE">Romance</option>
+            <option value="THRILLER">Thriller</option>
+            <option value="MYSTERY">Mystery</option>
+            <option value="CRIME">Crime</option>
+            <option value="HORROR">Horror</option>
+            <option value="SELF_HELP">Self Help</option>
+            <option value="FANTACY">Fantacy</option>
+            <option value="SCI_FI">Sci-fi</option>
+        </select>
+    </section>
+
+    <section>
+        <select id="byrating">
+        <option value="">Filter by Rating</option>
+        <option value="1">1 star</option>
+        <option value="2">2 star</option>
+        <option value="3">3 star</option>
+        <option value="4">4 star</option>
+        <option value="5">5 star</option>
+        </select>
+    </section>
+
+
+</body>
+</html>
